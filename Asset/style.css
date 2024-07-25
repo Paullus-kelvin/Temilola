@@ -551,6 +551,10 @@ body, html {
   cursor: pointer;
 }
 
+.brand-buttons a{
+  text-decoration: none;
+}
+
 .modal {
   display: none; /* Initially hidden */
   position: fixed;
