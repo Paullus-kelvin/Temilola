@@ -379,7 +379,7 @@ body, html {
 
 .video-portfolio h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #D35400;
   letter-spacing: 2px;
 }
@@ -1039,6 +1039,10 @@ input[name="testimonial"]:nth-child(4):checked ~ .testimonials-arrows .arrow-rig
   .service-card {
       width: 100%;
   }
+
+  h1 {
+    font-size: 1.8rem;
+  }
 }
 
 
@@ -1097,6 +1101,10 @@ input[name="testimonial"]:nth-child(4):checked ~ .testimonials-arrows .arrow-rig
   background-color: #333;
   padding: 50px 0 15px 0;
   font-family: 'Montserrat', sans-serif;
+}
+
+.site-footer a{
+  color: #fff;
 }
 
 .footer-top {
@@ -1325,6 +1333,7 @@ strong{
 
   .hero-button-container{
     justify-content:center;
+    padding: 0 1rem;
   }
 }
 
