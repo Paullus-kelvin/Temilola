@@ -138,10 +138,35 @@ document.addEventListener('DOMContentLoaded', function() {
           }
       });
   });
-
-
   
 });
+
+// Function to open a modal by its ID
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+      modal.style.display = "block";
+  }
+}
+
+// Function to close a modal by its ID
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  if (modal) {
+      modal.style.display = "none";
+  }
+}
+
+// Adding event listener for clicks outside of modals to close them
+window.addEventListener('click', function(event) {
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(function(modal) {
+      if (event.target === modal) {
+          modal.style.display = "none";
+      }
+  });
+});
+
 
 
 

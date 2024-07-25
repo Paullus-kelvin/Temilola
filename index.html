@@ -798,14 +798,68 @@
   <section class="brand-recommendation">
   <h2>You’ll Love These Brands – It's a guarantee</h2>
   <div class="brands-container">
-    <div class="brand-container"><img class="brand-image" src="Asset/SHOP WITH BEAUTIFY (5).png" alt="" ></div>
-    <div class="brand-container"><img class="brand-image" src="Asset/SHOP WITH BEAUTIFY (3).png" alt="" ></div>
+    <div class="position-relative brand-container">
+      <img class="brand-image" src="Asset/SHOP WITH BEAUTIFY (5).png" alt="" >
+      <div class="brand-buttons">
+      <button class="brand-button visit-us">Visit Us</button>
+      <button class="brand-button more-info" onclick="openModal('modal1')">More Info</button>
+      </div>
+    </div>
+    <div class="position-relative brand-container">
+      <img class="brand-image" src="Asset/SHOP WITH BEAUTIFY (3).png" alt="" >
+      <div class="brand-buttons">
+      <button class="brand-button visit-us">Visit Us</button>
+      <button class="brand-button more-info" onclick="openModal('modal2')">More Info</button>
+      </div>
+    </div>
   </div>
   <div class="brands-container">
-    <div class="brand-container"><img class="brand-image" src="Asset/SHOP WITH BEAUTIFY (7).png" alt="" ></div>
-    <div class="brand-container"><img class="brand-image" src="Asset/SHOP WITH BEAUTIFY (8).png" alt="" ></div>
+    <div class="position-relative brand-container">
+      <img class="brand-image" src="Asset/SHOP WITH BEAUTIFY (7).png" alt="">
+      <div class="brand-buttons">
+        <button class="brand-button visit-us">Visit Us</button>
+        <button class="brand-button more-info" onclick="openModal('modal3')">More Info</button>
+      </div>
+    </div>
+    <div class="position-relative brand-container">
+      <img class="brand-image" src="Asset/SHOP WITH BEAUTIFY (8).png" alt="">
+      <div class="brand-buttons">
+        <button class="brand-button visit-us">Visit Us</button>
+        <button class="brand-button more-info" onclick="openModal('modal4')">More Info</button>
+      </div>
+    </div>
   </div>
   </section>
+
+  <!-- Recommendation Section Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <h4>Brand Information</h4>
+      <p>Information about the brand goes here...</p>
+    </div>
+  </div>
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <h4>Brand Information</h4>
+      <p>Information about the brand goes here...</p>
+    </div>
+  </div>
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal3')">&times;</span>
+      <h4>Brand Information</h4>
+      <p>Information about the brand goes here...</p>
+    </div>
+  </div>
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal4')">&times;</span>
+      <h4>Brand Information</h4>
+      <p>Information about the brand goes here...</p>
+    </div>
+  </div>
 
   <section class="contact-section" id="Contact">
     <div class="overlay">
