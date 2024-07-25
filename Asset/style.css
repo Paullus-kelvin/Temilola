@@ -547,7 +547,6 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent */
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -576,6 +575,33 @@ body, html {
   transition: transform 1s ease-out;
   transform: translateY(-50px);
 }
+
+.brand-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.brand-button {
+  background-color: rgba(255, 20, 147, 0.5);
+  color: #fff;
+  border: 1px solid transparent; 
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px; /* Spacing between buttons */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.brand-button:hover, .brand-button:focus {
+  background-color: rgba(255, 255, 255, 0.8); /* Increase transparency on hover */
+  color: #d35400; /* Change text color on hover */
+}
+
 
 .close {
   color: #aaa;
@@ -1292,10 +1318,6 @@ input[name="testimonial"]:nth-child(4):checked ~ .testimonials-arrows .arrow-rig
 
   .navbar-nav .nav-item .nav-link {
     font-size: 14px; /* Smaller font size for mobile devices for better fit */
-  }
-
-  .hero{
-    padding-left: 1rem;
   }
 
   .hero-button-container{

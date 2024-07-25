@@ -141,31 +141,46 @@ document.addEventListener('DOMContentLoaded', function() {
   
 });
 
+
+
 // Function to open a modal by its ID
 function openModal(modalId) {
   const modal = document.getElementById(modalId);
+  console.log('Trying to open modal:', modalId); // Debugging line
   if (modal) {
-      modal.style.display = "block";
+      modal.style.display = "block"; // Make the modal block to start transition
+      modal.style.opacity = 1; // Change opacity to 1 to fade in
+  } else {
+      console.log('No modal found with ID:', modalId); // Debugging line
   }
 }
 
 // Function to close a modal by its ID
 function closeModal(modalId) {
   const modal = document.getElementById(modalId);
+  console.log('Trying to close modal:', modalId); // Debugging line
   if (modal) {
-      modal.style.display = "none";
+      modal.style.opacity = 0; // Start fading out
+      setTimeout(() => {
+          modal.style.display = "none"; // Hide after transition
+      }, 1000); // Delay should match transition duration
+  } else {
+      console.log('No modal found with ID:', modalId); // Debugging line
   }
 }
 
 // Adding event listener for clicks outside of modals to close them
 window.addEventListener('click', function(event) {
-  const modals = document.querySelectorAll('.modal');
-  modals.forEach(function(modal) {
+  document.querySelectorAll('.modal').forEach(function(modal) {
       if (event.target === modal) {
-          modal.style.display = "none";
+          modal.style.opacity = 0;
+          setTimeout(() => {
+              modal.style.display = "none";
+          }, 1000);
       }
   });
 });
+
 
 
 
