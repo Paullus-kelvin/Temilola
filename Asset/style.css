@@ -115,8 +115,7 @@ body, html {
   align-items: center;
   justify-content: center;
   padding: 15px 30px;
-  font-size: 18px; /* Keep font size consistent */
-
+  font-size: 18px; 
   text-decoration: none;
   height: 50px; /* Fixed height to ensure both buttons are the same */
   box-sizing: border-box; /* Include padding and border in the height calculation */
@@ -276,12 +275,11 @@ body, html {
 }
 
 .bio-paragraphs p {
-  font-size: 1.2rem; /* Slightly larger font for better readability */
-  line-height: 1.8; /* Improved line spacing for visual comfort */
-  color: #666666; /* Softer text color for a modern look */
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #666666; 
   margin-bottom: 1rem;
   text-align: justify;
-  /* font-family: 'Montserrat', sans-serif; */
   font-family: 'Raleway', sans-serif;
 }
 
@@ -383,16 +381,17 @@ body, html {
   text-align: center;
   font-size: 2.5rem;
   color: #D35400;
-  margin-bottom: 20px;
-  text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.video-portfolio p{
+  text-align: center;
 }
 
 .tabs {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 2rem;
 }
 
 
@@ -1186,7 +1185,9 @@ input[name="testimonial"]:nth-child(4):checked ~ .testimonials-arrows .arrow-rig
 
 
 
-
+strong{
+  font-weight: 500 !important;
+}
 
 
 @media (max-width: 768px) {
@@ -1203,6 +1204,8 @@ input[name="testimonial"]:nth-child(4):checked ~ .testimonials-arrows .arrow-rig
       padding-top: 20px;
       padding: 1rem;
   }
+
+ 
 
   .bio-text p{
     text-align: center;
@@ -1304,7 +1307,7 @@ input[name="testimonial"]:nth-child(4):checked ~ .testimonials-arrows .arrow-rig
 
 @media (max-width: 768px) {
   .navbar-nav .nav-item .nav-link {
-    font-size: 15px; /* Slightly smaller font size for tablets */
+    font-size: 15px;
   }
 }
 
@@ -1324,3 +1327,46 @@ input[name="testimonial"]:nth-child(4):checked ~ .testimonials-arrows .arrow-rig
     justify-content:center;
   }
 }
+
+/* Base styles are for desktop, defined above in your description */
+
+@media (max-width: 768px) {
+  .hero .content p {
+      font-size: 1.2rem;
+  }
+
+  .navbar-brand {
+      font-size: 1.5rem; 
+  }
+
+  .navbar-nav .nav-item .nav-link {
+      font-size: 14px; 
+  }
+
+  .bio-text h2 {
+      font-size: 1.6rem;
+  }
+
+  .bio-paragraphs p {
+      font-size: 1rem; 
+      line-height: 1.6;
+  }
+
+  .tab-button {
+      font-size: 14px; 
+  }
+
+  .testimonial-text {
+      font-size: 18px; 
+      line-height: 22px;
+  }
+
+  .testimonial-author {
+      font-size: 13px;
+  }
+
+  .header-area p {
+      font-size: 16px;
+  }
+}
+
