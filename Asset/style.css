@@ -229,7 +229,7 @@ body, html {
   justify-content: center;
   gap: 1rem;
   padding:0 3rem;
-  background-color: #FFF5E1; /* Light background for a soft look */
+  background-color: #FFD1E0; /* Light background for a soft look */
   color: #383838;
   position: relative; 
   overflow: hidden; 
@@ -243,14 +243,6 @@ body, html {
   padding-top: 2rem;
 }
 
-
-.about-me-splash {
-  position: absolute;
-  top: -15%; /* Aligns the splash image at the top of the container */
-  left: 0; /* Aligns the splash image at the left of the container */
-  width: 105%; /* Ensures the splash image covers the full width of the container */
-  height: 100%; /* Ensures the splash image covers the full height of the container */
-}
 
 .profile-pic {
   width: 80%; /* Adjust based on preference */
@@ -367,7 +359,7 @@ body, html {
 
 
 .video-portfolio {
-  background-color: #FFF5E1;
+  background-color: #FFD1E0;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -498,7 +490,7 @@ body, html {
   min-height: 100vh;
   gap: 0.5rem;
   padding: 2rem 3rem;
-  background-color: #FFF5E1;
+  background-color: #FFD1E0;
 }
 
 .brand-recommendation h2{
@@ -589,8 +581,8 @@ body, html {
 }
 
 .brand-button {
-  background-color: rgba(255, 20, 147, 0.5);
-  color: #fff;
+  background-color: rgba(255, 225, 225, 0.5);
+  color: #ff1493;
   border: 1px solid transparent; 
   padding: 10px 20px;
   font-size: 16px;
@@ -627,7 +619,7 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fffafa;
+  background-color: #fff;
   position: relative;
   overflow: hidden;
   height: 100vh;
@@ -646,7 +638,7 @@ body, html {
 }
 
 .testimonials {
-  background-color: #FFF0E1;
+  background-color: #FFD1E0;
   width: 100%;
   max-width: 740px;
   margin: 20px;
@@ -981,7 +973,7 @@ input[name="testimonial"]:nth-child(4):checked ~ .testimonials-arrows .arrow-rig
 }
 
 .services-section {
-  background-color: #fffafa;
+  background-color: #fff;
   padding: 50px 0;
   text-align: center;
 }
@@ -1012,7 +1004,7 @@ input[name="testimonial"]:nth-child(4):checked ~ .testimonials-arrows .arrow-rig
 }
 
 .service-card {
-  background-color: #FFF0E1;
+  background-color: #FFD1E0;
   border: none;
   width: calc(50% - 10px);
   padding: 20px;
@@ -1259,20 +1251,11 @@ strong{
     justify-content: center;
   }
 
-  .about-me-splash {
-    position: absolute;
-    top: -15%;
-    left: 50%;
-    transform: translate(-50%);
-    width: 90%;
-    height: 80%;
-  }
-
   .brand-recommendation{
     display: flex;
     flex-direction: column;
     padding: 2rem 1rem;
-    background-color: #FFF5E1;
+    background-color: #FFD1E0;
     min-height: auto;
     gap: 0.5rem;
   }
